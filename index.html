@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en" style=""><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="darkreader-lock">
+  <link rel="icon" href="assets/images/favicon.png">
+  <title>Anime.js | JavaScript Animation Engine</title>
+  <meta name="description" content="A fast, multipurpose and lightweight JavaScript animation library">
+  <meta property="og:title" content="Anime.js | JavaScript Animation Engine">
+  <meta property="og:url" content="https://animejs.com">
+  <meta property="og:image" content="https://animejs.com/media/pages/home/066c76f87b-1787698629/generated-og-image.en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="og:description" content="A fast, multipurpose and lightweight JavaScript animation library">
+  <meta name="twitter:title" content="Anime.js | JavaScript Animation Engine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://animejs.com/media/pages/home/066c76f87b-1787698629/generated-og-image.en.png">
+  <meta name="twitter:description" content="A fast, multipurpose and lightweight JavaScript animation library">
+    <link href="assets/css/core.css" rel="stylesheet">  <link href="assets/css/home.css" rel="stylesheet"><script>
+  window.paths = {
+    demos: 'https://animejs.com/documentation-demos',
+    'easings': 'https://animejs.com/assets/json/easings.json',
+    'github-sponsors': 'https://animejs.com/sponsors/github-sponsors',
+    'platinum-sponsors': 'https://animejs.com/sponsors/platinum-sponsors',
+    'gold-sponsors': 'https://animejs.com/sponsors/gold-sponsors',
+    'silver-sponsors': 'https://animejs.com/sponsors/silver-sponsors',
+  };
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-16LTPBS8QC');
+</script></head>
+
+
+<body data-template="home" class="" style="background-color: rgb(37, 36, 35);">
+  <div class="page is-ready" style="">
+    <header id="site-header" class="layout-container text-ui ui-overlay" style="opacity: 1;">
+  <div id="site-header-content" style="">
+    <h1 class="heading-logo header-logo">
+      <a href="index.html">
+        <img src="assets/images/anime-js-logo-v4.svg" alt="anime.js logo v4" width="580" height="118">
+        <span>Anime.js | JavaScript Animation Engine</span>
+      </a>
+      <label id="docs-versions" class="ui-select ui-input">
+        <select class="ui-input" name="docs-versions" aria-label="Anime.js versions">
+          <option value="/documentation">4.5.0</option>
+          <option value="/v3/documentation">3.2.2</option>
+          <option value="/v2/documentation">2.1.0</option>
+        </select>
+      </label>
+    </h1>
+    <nav id="site-menu" class="">
+      <ul>
+                                        <li><a class="main-nav-link docs-link" data-id="docs" href="https://animejs.com/documentation" title="Documentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="sidebar" fill="none" fill-rule="evenodd">
+    <path id="rectangle" fill="#FFFFFF" fill-rule="nonzero" d="M16.167 6.125H7.833A3.375 3.375 0 0 0 4.458 9.5v5a3.375 3.375 0 0 0 3.375 3.375h8.334a3.375 3.375 0 0 0 3.375-3.375v-5a3.375 3.375 0 0 0-3.375-3.375zm-8.334 1.75h8.334c.897 0 1.625.728 1.625 1.625v5c0 .897-.728 1.625-1.625 1.625H7.833A1.625 1.625 0 0 1 6.208 14.5v-5c0-.897.728-1.625 1.625-1.625z"></path>
+    <polyline id="Path-42" stroke="#FFFFFF" stroke-width="1.75" points="9.5 7.75 9.5 12 9.5 16.25" data-points="13.5 8.75 10.5 12 13.5 15.25"></polyline>
+  </g>
+</svg>
+<span>Docs</span></a></li>
+        <li><a class="main-nav-link" href="https://animejs.com/easing-editor" title="Easing functions editor"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon"><path fill="none" stroke="currentColor" stroke-width="1.75" d="M4.5,17 C14.5967876,17 8.37571813,7 19.5,7"></path></svg><span>Easings</span></a></li>
+        <li><a class="main-nav-link" href="https://animejs.com/learn" title="Learn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+  <g fill="none"><path fill="currentColor" d="M16.1666667,6.125 L7.83333333,6.125 C5.9693723,6.125 4.45833333,7.63603897 4.45833333,9.5 L4.45833333,14.5 C4.45833333,16.363961 5.9693723,17.875 7.83333333,17.875 L16.1666667,17.875 C18.0306277,17.875 19.5416667,16.363961 19.5416667,14.5 L19.5416667,9.5 C19.5416667,7.63603897 18.0306277,6.125 16.1666667,6.125 Z M7.83333333,7.875 L16.1666667,7.875 C17.0641294,7.875 17.7916667,8.60253728 17.7916667,9.5 L17.7916667,14.5 C17.7916667,15.3974627 17.0641294,16.125 16.1666667,16.125 L7.83333333,16.125 C6.93587061,16.125 6.20833333,15.3974627 6.20833333,14.5 L6.20833333,9.5 C6.20833333,8.60253728 6.93587061,7.875 7.83333333,7.875 Z"></path><path fill="currentColor" fill-rule="evenodd" d="M10,10.0706309 L10,13.9294941 C10,14.2445758 10.2554242,14.5 10.5705059,14.5 C10.6590742,14.5 10.7464261,14.479379 10.8256439,14.4397701 L14.6845071,12.5103385 C14.9663248,12.3694297 15.0805539,12.0267421 14.9396451,11.7449245 C14.8844409,11.634516 14.7949156,11.5449908 14.6845071,11.4897865 L10.8256439,9.56035488 C10.5438263,9.41944606 10.2011387,9.53367523 10.0602299,9.81549288 C10.033824,9.86830478 10.0158571,9.92473182 10.0068132,9.9827243 L10,10.0706309 Z"></path></g>
+</svg><span>Learn</span></a></li>
+        <li><a class="main-nav-link nav-link-retractable" href="https://codepen.io/collection/Poerqa?cursor=eyJwYWdlIjoxfQ==/" target="_blank" title="CodePen"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="codepen" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path id="Shape" stroke="#FFFFFF" stroke-width="1.75" d="M5 14.355L12 19l7-4.645v-4.71L12 5 5 9.645v4.71zm14 0l-7-4.71-7 4.71m0-4.71l7 4.646 7-4.646M12 5v4.645m0 4.71V19"></path>
+  </g>
+</svg>
+<span>Examples</span></a></li>
+        <li><a class="main-nav-link nav-link-retractable" href="https://github.com/juliangarnier/anime" target="_blank" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" d="M12.007 4C7.579 4 4 7.606 4 12.066a8.06 8.06 0 0 0 5.475 7.652c.397.08.543-.173.543-.387 0-.187-.013-.828-.013-1.496-2.227.481-2.691-.961-2.691-.961-.358-.935-.888-1.175-.888-1.175-.73-.495.053-.495.053-.495.808.054 1.233.828 1.233.828.715 1.229 1.869.882 2.333.668.066-.52.278-.881.504-1.082-1.777-.187-3.646-.881-3.646-3.98 0-.88.318-1.602.822-2.163-.08-.2-.358-1.028.08-2.136 0 0 .676-.214 2.2.828a7.698 7.698 0 0 1 2.002-.268 7.7 7.7 0 0 1 2.001.268c1.525-1.042 2.2-.828 2.2-.828.438 1.108.16 1.936.08 2.136.517.561.822 1.282.822 2.164 0 3.098-1.869 3.779-3.659 3.98.292.253.544.734.544 1.495 0 1.082-.013 1.95-.013 2.217 0 .214.146.467.543.387A8.06 8.06 0 0 0 20 12.066C20.013 7.606 16.42 4 12.007 4z"></path>
+  </g>
+</svg>
+<span>GitHub</span></a></li>
+        <!-- <li><a class="main-nav-link nav-link-retractable" href="https://github.com/sponsors/juliangarnier" target="_blank" title="Discord"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <path fill="currentColor" d="M17.5446757,7.01094204 C16.5248898,6.54302092 15.4313236,6.19827727 14.2879321,6.00082826 C14.2671096,5.99701756 14.2463096,6.00654094 14.2355828,6.0255877 C14.0949406,6.27573079 13.9391547,6.60206318 13.8300617,6.85855894 C12.6002702,6.67444627 11.3767885,6.67444627 10.1722139,6.85855894 C10.0630984,6.59636177 9.90165617,6.27573079 9.76038294,6.0255877 C9.74965618,6.00717643 9.72885618,5.99765305 9.70803364,6.00082826 C8.56527311,6.19764628 7.47170693,6.54238994 6.45129006,7.01094204 C6.44245625,7.01475049 6.43488442,7.02110542 6.42985907,7.02935331 C4.35559433,10.1282603 3.78736652,13.1509982 4.06612009,16.1362601 C4.06738138,16.1508629 4.07557992,16.1648348 4.08693203,16.1737137 C5.45547262,17.178739 6.78113794,17.7888798 8.08218579,18.1932967 C8.10300833,18.1996516 8.1250703,18.1920347 8.138321,18.1748854 C8.44608438,17.7546038 8.72042803,17.3114488 8.95565056,16.8454207 C8.96953225,16.8181305 8.95628155,16.7857474 8.92790972,16.7749531 C8.4927548,16.6098827 8.07839988,16.4086207 7.67981961,16.1800686 C7.64829285,16.1616573 7.6457689,16.1165644 7.67477172,16.0949756 C7.75864777,16.0321249 7.84254636,15.9667277 7.9226365,15.9006996 C7.93712664,15.8886432 7.95731819,15.8860968 7.97435481,15.8937137 C10.5928562,17.0892291 13.4276955,17.0892291 16.0153011,15.8937137 C16.0323377,15.8854658 16.0525293,15.8880122 16.0676504,15.9000686 C16.1477631,15.9660968 16.2316391,16.0321249 16.3161462,16.0949756 C16.345149,16.1165644 16.343256,16.1616573 16.3117293,16.1800686 C15.913149,16.4130601 15.4987941,16.6098827 15.0630082,16.7743221 C15.0346363,16.7851165 15.0220166,16.8181305 15.0358983,16.8454207 C15.2761687,17.3107953 15.5505124,17.7539502 15.8525969,18.1742544 C15.8652166,18.1920347 15.8879096,18.1996516 15.9087321,18.1932967 C17.2160898,17.7888798 18.5417461,17.178739 19.9102869,16.1737137 C19.9222757,16.1648348 19.9298475,16.1514939 19.9311095,16.1368911 C20.2647207,12.6856011 19.3723264,9.68765183 17.5654757,7.02998429 C17.5610588,7.02110542 17.5535095,7.01475049 17.5446757,7.01094204 Z M9.34668154,14.3185475 C8.55833226,14.3185475 7.90875481,13.5947841 7.90875481,12.7059278 C7.90875481,11.8170715 8.54573508,11.0933081 9.34668154,11.0933081 C10.1539153,11.0933081 10.7972054,11.8234264 10.7845857,12.7059278 C10.7845857,13.5947841 10.1476055,14.3185475 9.34668154,14.3185475 Z M14.6631659,14.3185475 C13.8748392,14.3185475 13.2252617,13.5947841 13.2252617,12.7059278 C13.2252617,11.8170715 13.8622195,11.0933081 14.6631659,11.0933081 C15.4704222,11.0933081 16.1136898,11.8234264 16.1010926,12.7059278 C16.1010926,13.5947841 15.4704222,14.3185475 14.6631659,14.3185475 Z"/>
+</svg>
+<span>Discord</span></a></li> -->
+        <li>
+          <sponsor-button data-color="0">
+          <a href="https://github.com/sponsors/juliangarnier" class="main-nav-link sponsor-button" target="_blank" title="Sponsor Julian Garnier on GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg>
+            <span>Sponsor</span>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path>
+  </g>
+</svg></sponsor-button>
+        </li>
+      </ul>
+    </nav>
+    <button id="toggle-site-menu" class="ui-input trigger-pane" title="Toggle site menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g id="menu" fill="none" fill-rule="evenodd">
+    <rect id="Rectangle" width="16" height="1.75" x="4" y="8" fill="currentColor"></rect>
+    <rect id="Rectangle-Copy" width="16" height="1.75" x="4" y="14" fill="currentColor"></rect>
+  </g>
+</svg>
+</button>
+  </div>
+  </header>
+<main id="home" class="layout-container" style="">
+  <section id="intro" data-chapter="intro" data-label="HEADING">
+    <div class="section formatted-text">
+      <div class="section-content">
+        <div class="section-text section-text-short" style="opacity: 1;">
+          <h2><span style="position: absolute; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); width: 1px; height: 1px; white-space: nowrap;">All-in-one <br>animation <br>engine<span class="animation-engine red-dot" style="transform: translateX(0em); opacity: 1; color: rgb(246, 244, 242);">.</span></span><span class="word" data-word="0" data-line="0" style="display: inline-block;" aria-hidden="true"><span class="char" data-char="0" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">A</span><span class="char" data-char="1" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">l</span><span class="char" data-char="2" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">l</span><span class="char" data-char="3" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">-</span><span class="char" data-char="4" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">i</span><span class="char" data-char="5" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span><span class="char" data-char="6" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">-</span><span class="char" data-char="7" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">o</span><span class="char" data-char="8" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span><span class="char" data-char="9" data-line="0" data-word="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">e</span></span> <br><span class="word" data-word="1" data-line="1" style="display: inline-block;" aria-hidden="true"><span class="char" data-char="10" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">a</span><span class="char" data-char="11" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span><span class="char" data-char="12" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">i</span><span class="char" data-char="13" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">m</span><span class="char" data-char="14" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">a</span><span class="char" data-char="15" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">t</span><span class="char" data-char="16" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">i</span><span class="char" data-char="17" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">o</span><span class="char" data-char="18" data-line="1" data-word="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span></span> <br><span class="word" data-word="2" data-line="2" style="display: inline-block;" aria-hidden="true"><span class="char" data-char="19" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">e</span><span class="char" data-char="20" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span><span class="char" data-char="21" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">g</span><span class="char" data-char="22" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">i</span><span class="char" data-char="23" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">n</span><span class="char" data-char="24" data-line="2" data-word="2" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">e</span></span><span class="animation-engine red-dot" style="transform: translateX(0em); opacity: 1; color: rgb(246, 244, 242);"><span class="word" data-word="3" data-line="2" style="display: inline-block;" aria-hidden="true"><span class="char" data-char="25" data-line="2" data-word="3" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">.</span></span></span></h2>
+          <p><span style="position: absolute; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); width: 1px; height: 1px; white-space: nowrap;">A fast and flexible JavaScript <br>library to animate <span class="animate-anything-wrapper"><span class="animate-anything"><span style="position: absolute; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); width: 1px; height: 1px; white-space: nowrap;">HTML</span><span class="word" data-word="0" data-line="0" style="display: inline-block;" aria-hidden="true"><span class="char" data-char="0" data-line="0" data-word="0" style="display: inline-block;" aria-hidden="true">H</span><span class="char" data-char="1" data-line="0" data-word="0" style="display: inline-block;" aria-hidden="true">T</span><span class="char" data-char="2" data-line="0" data-word="0" style="display: inline-block;" aria-hidden="true">M</span><span class="char" data-char="3" data-line="0" data-word="0" style="display: inline-block;" aria-hidden="true">L</span></span></span><span class="animate-anything-dot" style="transform-origin: 0% 0%; transform: translateX(0px) scaleX(1); color: rgb(213, 211, 209);">.</span></span></span><span class="word" data-word="0" data-line="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">A</span> <span class="word" data-word="1" data-line="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">fast</span> <span class="word" data-word="2" data-line="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">and</span> <span class="word" data-word="3" data-line="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">flexible</span> <span class="word" data-word="4" data-line="0" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">JavaScript</span> <br><span class="word" data-word="5" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">library</span> <span class="word" data-word="6" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">to</span> <span class="word" data-word="7" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">animate</span> <span class="animate-anything-wrapper"><span class="animate-anything"><span class="word" data-word="8" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">the</span> <span class="word" data-word="9" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">web</span></span><span class="animate-anything-dot" style="transform-origin: 0% 0%; transform: translateX(0px) scaleX(1); color: rgb(213, 211, 209);"><span class="word" data-word="10" data-line="1" style="display: inline-block; transform: translateX(0em); opacity: 1;" aria-hidden="true">.</span></span></span></p>
+          <p></p>
+        </div>
+        <div class="fixed-container heading-links" style="transform: translateY(0px); opacity: 1;">
+          <div class="layout-container">
+            <div class="ui-group" style="opacity: 1;">
+              <pre class="npm-install"><code>npm i animejs<button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></code></pre>
+              <button class="learn-more ui-input ui-button text-ui">Learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" style="transform: translateY(0.8659em); opacity: 0.753;">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="12 18 17.237 12.763 16 11.525 12.875 14.651 12.875 6.763 11.125 6.763 11.125 14.651 8 11.525 6.763 12.763"></polygon>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" style="transform: translateY(0.8659em); opacity: 0.247;">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="12 18 17.237 12.763 16 11.525 12.875 14.651 12.875 6.763 11.125 6.763 11.125 14.651 8 11.525 6.763 12.763"></polygon>
+  </g>
+</svg>
+</button>
+            </div>
+            <div class="heading-sponsors formatted-text" style="opacity: 1;">
+              <span class="text-xxs">Sponsored by</span>
+              <sponsors-list path="platinum-sponsors">    <a class="sponsor" href="https://github.com/sponsors/juliangarnier?ref=animejs" target="_blank" title="Become a sponsor" data-url-params="" data-url-params-docs="">
+          <img src="media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg" alt="Become a sponsor" width="100" height="100" loading="lazy">
+        <span>Become a sponsor</span>
+  </a>
+</sponsors-list>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+  </section>
+
+  <section id="toolbox" class="section-container section-light" data-chapter="toolbox" data-label="TOOLBOX" data-enter-offset="-=100lvh" data-leave-offset="-=10lvh">
+    <div class="section fixed-section" style="pointer-events: none; opacity: 0.001;">
+      <div class="section-content">
+        <div class="section-text formatted-text section-text-short">
+          <h2 class="section-heading text-xxl">The complete <br>animator's toolbox</h2>
+          <p class="section-sub-heading">Break free from browser limitations and animate anything on the web with a single API.</p>
+        </div>
+        <div class="toolbox-labels-container layout-container">
+          <div class="toolbox-labels">
+            <ul class="toolbox-labels-left"><li class="color-timer" style="opacity: 0;">timer</li><li class="color-easings" style="opacity: 0;">easings</li><li class="color-draggable" style="opacity: 0;">draggable</li><li class="color-events" style="opacity: 0;">scroll</li><li class="color-scope" style="opacity: 0;">scope</li></ul>
+            <ul class="toolbox-labels-right"><li class="color-waapi" style="opacity: 0;">waapi</li><li class="color-timeline" style="opacity: 0;">timeline</li><li class="color-utils" style="opacity: 0;">stagger</li><li class="color-svg" style="opacity: 0;">svg</li><li class="color-easings" style="opacity: 0;">spring</li><li class="color-animation" style="opacity: 0;">animation</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+  </section>
+
+  <section id="features-gallery" data-label="FEATURES" style="opacity: 1;">
+    <section id="intuitive" class="section feature-section formatted-text color-getting-started" data-chapter="intuitive" data-demo="intuitive">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Intuitive API</h2>
+              <p style="opacity: 0.5;">Animate faster with an easy-to-use, yet powerful animation API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/tween-parameters/composition"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Per property parameters</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/tween-parameters/composition"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Flexible keyframes system</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/tween-parameters/composition"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Built-in easings</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-getting-started" style="opacity: 0.0011;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="composition" class="section feature-section formatted-text color-animation" data-chapter="composition" data-demo="composition">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Enhanced transforms</h2>
+              <p style="opacity: 0.5;">Smoothly blend individual CSS transform properties with a versatile composition API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/animatable-properties/css-transforms"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Individual CSS Transforms</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/tween-value-types/function-based"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Function based values</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/animation/tween-parameters/composition"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Blend composition</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-animation" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="scroll" class="section feature-section formatted-text color-turquoise" data-chapter="scroll" data-demo="scroll">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Scroll Observer</h2>
+              <p style="opacity: 0.5;">Synchronise and trigger animations on scroll with the Scroll Observer API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Multiple synchronisation modes</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Advanced thresholds</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Complete set of callbacks</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-turquoise" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="staggering" class="section feature-section formatted-text color-utils" data-chapter="staggering" data-demo="staggering">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Advanced staggering</h2>
+              <p style="opacity: 0.5;">Create stunning effects in seconds with the built-in Stagger utility function.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/stagger/time-staggering"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Time staggering</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/stagger/values-staggering"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Values staggering</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/stagger/timeline-positions-staggering"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Timeline positions staggering</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-utils" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="svgUtils" class="section feature-section formatted-text color-svg" data-chapter="svgUtils" data-demo="svgUtils">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">SVG toolset</h2>
+              <p style="opacity: 0.5;">Morph shapes, follow motion paths, and draw lines easily with the built-in SVG utilities.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/svg/morphto"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Shape morphing</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/svg/createdrawable"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Line drawing</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/svg/createmotionpath"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Motion path</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-svg" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="draggable" class="section feature-section formatted-text color-draggable" data-chapter="draggable" data-demo="draggable" style="">
+      <div class="section-content" style="">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Springs and draggable</h2>
+              <p style="opacity: 0.5;">Drag, snap, flick and throw HTML elements with the fully-featured Draggable API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/draggable/draggable-settings"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Versatile settings</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/draggable/draggable-callbacks"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Comprehensive callbacks</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/draggable/draggable-methods"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Useful methods</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper" style="">
+            <div id="draggable-demo" class="feature-section-demo color-draggable" style="opacity: 0.001;">
+              <div class="draggable-container" style="">
+                <div class="draggable" style="transform: translate(0px, 0px) scale(0); touch-action: none;"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="clockwork" class="section feature-section formatted-text color-timeline" data-chapter="clockwork" data-demo="clockwork">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Runs like <br>clockwork</h2>
+              <p style="opacity: 0.5;">Orchestrate animation sequences and keep callbacks in sync with the powerful Timeline API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/timeline/add-animations"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Synchronise animations</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/timeline/time-position"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Advanced time positions</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/timeline/timeline-playback-settings"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Playback settings</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-timeline" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+
+    <section id="responsive" class="section feature-section formatted-text color-green" data-chapter="responsive" data-demo="responsive">
+      <div class="section-content">
+          <div class="section-text">
+            <div class="section-text-heading">
+              <h2 style="opacity: 0.5;">Responsive animations</h2>
+              <p style="opacity: 0.5;">Make animations respond to media queries easily with the Scope API.</p>
+            </div>
+            <ul class="feature-links" style="opacity: 0.001; --scaleX: 1;">
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/scope/scope-parameters/mediaqueries"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Media queries</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/scope/scope-parameters/root"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Custom root element</a></li>
+              <li style="opacity: 1;"><a class="text-ui" href="https://animejs.com/documentation/scope/register-method-function"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Scopped methods</a></li>
+            </ul>
+          </div>
+          <div class="feature-section-demo-wrapper">
+            <div class="feature-section-demo fixed-section color-green" style="opacity: 0.001;"></div>
+          </div>
+      </div>
+    </section>
+  </section>
+  <div class="section-spacer"></div>
+  <section id="modules" class="section-container section-light" data-chapter="modules" data-label="MODULES" data-enter-offset="+=10lvh" data-leave-offset="-=75lvh">
+    <section class="section fixed-section" style="pointer-events: none; opacity: 0.001;">
+      <div class="section-content">
+        <div class="section-text formatted-text section-text-short">
+          <h2 class="section-heading text-xxl">A lightweight <br>and modular API</h2>
+          <p class="section-sub-heading">Keep your bundle size small by only importing the parts you need.</p>
+        </div>
+      </div>
+    </section>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+  </section>
+
+  <section id="sponsors" class="section formatted-text" data-chapter="sponsors" data-label="SPONSORS">
+    <div class="section-content">
+      <div class="section-text">
+        <h2>Our sponsors</h2>
+        <p>Anime.js is 100% free and is only made possible with the help of our sponsors.</p>
+        <div class="company-sponsors-list">
+          <sponsors-list size="large" boxed="" path="platinum-sponsors">    <a class="sponsor" href="https://github.com/sponsors/juliangarnier?ref=animejs" target="_blank" title="Become a sponsor" data-url-params="" data-url-params-docs="">
+          <img src="media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg" alt="Become a sponsor" width="100" height="100" loading="lazy">
+        <span>Become a sponsor</span>
+  </a>
+</sponsors-list>
+        </div>
+        <div class="company-sponsors-list">
+          <sponsors-list size="small" boxed="" path="silver-sponsors">    <a class="sponsor" href="https://www.testmuai.com/?utm_medium=sponsor&amp;utm_source=animejs?ref=animejs" target="_blank" title="TestMu AI" data-url-params="" data-url-params-docs="">
+          <img src="media/pages/sponsors/silver-sponsors/49214d1e15-1787698629/testmu-ai-logomark.svg" alt="TestMu AI" width="100" height="100" loading="lazy">
+        <span>TestMu AI</span>
+  </a>
+</sponsors-list>
+        </div>
+        <ul class="feature-links">
+          <li><a class="text-ui" href="https://github.com/sponsors/juliangarnier" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+Become a sponsor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section-spacer"></div>
+    <div class="section-spacer"></div>
+  </section>
+
+  <section id="get-started" data-chapter="get-started" data-label="GET_STARTED">
+    <div class="section-spacer"></div>
+    <section class="section formatted-text">
+      <div class="section-content section-centered">
+        <div class="section-text section-centered">
+          <h2 class="text-xxxl">Start animating</h2>
+          <p>Get started quickly with our in-depth documentation.</p>
+        </div>
+        <ul class="links-list links-list-boxed links-list-grid text-ui">
+          <li><a href="https://animejs.com/documentation/getting-started"><span class="label-dot"></span>Getting started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/timer"><span class="label-dot"></span>Timer<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/animation"><span class="label-dot"></span>Animation<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/timeline"><span class="label-dot"></span>Timeline<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/animatable"><span class="label-dot"></span>Animatable<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/draggable"><span class="label-dot"></span>Draggable<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/scope"><span class="label-dot"></span>Scope<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/events/onscroll"><span class="label-dot"></span>Scroll<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/svg"><span class="label-dot"></span>SVG<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/utilities"><span class="label-dot"></span>Utils<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/easings"><span class="label-dot"></span>Easings<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <li><a href="https://animejs.com/documentation/web-animation-api"><span class="label-dot"></span>WAAPI<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"></polygon>
+  </g>
+</svg>
+</a></li>
+          <!-- <li><a class="text-ui docs-info-link" href="documentation/engine"><span class="label-dot"></span><span class="label-text">Engine<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
+  <g fill="none" fill-rule="evenodd">
+    <polygon fill="currentColor" fill-rule="nonzero" points="17.737 11.987 12.5 17.225 11.263 15.987 14.388 12.862 6.5 12.862 6.5 11.112 14.388 11.112 11.263 7.987 12.5 6.75"/>
+  </g>
+</svg>
+</span></a></li> -->
+        </ul>
+      </div>
+    </section>
+  </section>
+
+  <div class="sub-nav" style="pointer-events: none;">
+    <div class="home-progress-card" style="opacity: 0; transform: translateY(100%);">
+      <div class="scroll-bar" style="">
+        <div class="scroll-cursor" style="transform: translate(-1px, 0px) scale(1); touch-action: pan-y; opacity: 1;"></div>
+        <div class="scroll-cursor-ghost scroll-cursor" style="transform: translateX(0px) scale(1); opacity: 0;"></div>
+      <a href="#intro" class="scroll-button" data-index="0" style="opacity: 0.5;"></a><a href="#toolbox" class="scroll-button" data-index="1" style="opacity: 0.5;"></a><a href="#intuitive" class="scroll-button" data-index="2" style="opacity: 0.5;"></a><a href="#composition" class="scroll-button" data-index="3" style="opacity: 0.5;"></a><a href="#scroll" class="scroll-button" data-index="4" style="opacity: 0.5;"></a><a href="#staggering" class="scroll-button" data-index="5" style="opacity: 0.5;"></a><a href="#svgUtils" class="scroll-button" data-index="6" style="opacity: 0.5;"></a><a href="#draggable" class="scroll-button" data-index="7" style="opacity: 0.5;"></a><a href="#clockwork" class="scroll-button" data-index="8" style="opacity: 0.5;"></a><a href="#responsive" class="scroll-button" data-index="9" style="opacity: 0.5;"></a><a href="#modules" class="scroll-button" data-index="10" style="opacity: 0.5;"></a><a href="#sponsors" class="scroll-button" data-index="11" style="opacity: 0.5;"></a><a href="#get-started" class="scroll-button" data-index="12" style="opacity: 0.5;"></a></div>
+    </div>
+<pre data-card="intuitive" data-="" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">animate</span>(<span class="hljs-string">'.square'</span>, {
+  <span class="hljs-attr">rotate</span>: <span class="hljs-number">90</span>,
+  <span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">ease</span>: <span class="hljs-string">'inOutExpo'</span>,
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="composition" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">animate</span>(<span class="hljs-string">'.shape'</span>, {
+  <span class="hljs-attr">x</span>: <span class="hljs-title function_">random</span>(-<span class="hljs-number">100</span>, <span class="hljs-number">100</span>),
+  <span class="hljs-attr">y</span>: <span class="hljs-title function_">random</span>(-<span class="hljs-number">100</span>, <span class="hljs-number">100</span>),
+  <span class="hljs-attr">rotate</span>: <span class="hljs-title function_">random</span>(-<span class="hljs-number">180</span>, <span class="hljs-number">180</span>),
+  <span class="hljs-attr">duration</span>: <span class="hljs-title function_">random</span>(<span class="hljs-number">500</span>, <span class="hljs-number">1000</span>),
+  <span class="hljs-attr">composition</span>: <span class="hljs-string">'blend'</span>,
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="svgUtils" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">animate</span>(<span class="hljs-string">'.car'</span>, {
+  ...<span class="hljs-title function_">createMotionPath</span>(<span class="hljs-string">'.circuit'</span>),
+});
+
+<span class="hljs-title function_">animate</span>(<span class="hljs-title function_">createDrawable</span>(<span class="hljs-string">'.circuit'</span>), {
+  <span class="hljs-attr">draw</span>: <span class="hljs-string">'0 1'</span>,
+});
+
+<span class="hljs-title function_">animate</span>(<span class="hljs-string">'.circuit-a'</span>, {
+  <span class="hljs-attr">d</span>: <span class="hljs-title function_">morphTo</span>(<span class="hljs-string">'.circuit-b'</span>),
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="scroll" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">animate</span>(<span class="hljs-title function_">createDrawable</span>(<span class="hljs-string">'path'</span>), {
+  <span class="hljs-attr">draw</span>: [<span class="hljs-string">'0 0'</span>, <span class="hljs-string">'0 1'</span>, <span class="hljs-string">'1 1'</span>],
+  <span class="hljs-attr">delay</span>: <span class="hljs-title function_">stagger</span>(<span class="hljs-number">40</span>),
+  <span class="hljs-attr">ease</span>: <span class="hljs-string">'inOut(3)'</span>,
+  <span class="hljs-attr">autoplay</span>: <span class="hljs-title function_">onScroll</span>({ <span class="hljs-attr">sync</span>: <span class="hljs-literal">true</span> }),
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="staggering" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-keyword">const</span> options = {
+  <span class="hljs-attr">grid</span>: [<span class="hljs-number">13</span>, <span class="hljs-number">13</span>],
+  <span class="hljs-attr">from</span>: <span class="hljs-string">'center'</span>,
+};
+
+<span class="hljs-title function_">createTimeline</span>()
+  .<span class="hljs-title function_">add</span>(<span class="hljs-string">'.dot'</span>, {
+    <span class="hljs-attr">scale</span>: <span class="hljs-title function_">stagger</span>([<span class="hljs-number">1.1</span>, <span class="hljs-number">.75</span>], options),
+    <span class="hljs-attr">ease</span>: <span class="hljs-string">'inOutQuad'</span>,
+  }, <span class="hljs-title function_">stagger</span>(<span class="hljs-number">200</span>, options));
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="draggable" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">createDraggable</span>(<span class="hljs-string">'.circle'</span>, {
+  <span class="hljs-attr">releaseEase</span>: <span class="hljs-title function_">createSpring</span>({
+    <span class="hljs-attr">stiffness</span>: <span class="hljs-number">120</span>,
+    <span class="hljs-attr">damping</span>: <span class="hljs-number">6</span>,
+  })
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="clockwork" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">createTimeline</span>()
+  .<span class="hljs-title function_">add</span>(<span class="hljs-string">'.tick'</span>, {
+    <span class="hljs-attr">y</span>: <span class="hljs-string">'-=6'</span>,
+    <span class="hljs-attr">duration</span>: <span class="hljs-number">50</span>,
+  }, <span class="hljs-title function_">stagger</span>(<span class="hljs-number">10</span>))
+  .<span class="hljs-title function_">add</span>(<span class="hljs-string">'.ticker'</span>, {
+    <span class="hljs-attr">rotate</span>: <span class="hljs-number">360</span>,
+    <span class="hljs-attr">duration</span>: <span class="hljs-number">1920</span>,
+  }, <span class="hljs-string">'&lt;'</span>);
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+<pre data-card="responsive" style="transform: translateY(120%); opacity: 0;"><code data-highlighted="yes" class="hljs language-javascript"><span class="hljs-title function_">createScope</span>({
+  <span class="hljs-attr">mediaQueries</span>: {
+    <span class="hljs-attr">portrait</span>: <span class="hljs-string">'(orientation: portrait)'</span>,
+  }
+})
+.<span class="hljs-title function_">add</span>(<span class="hljs-function">(<span class="hljs-params">{ matches }</span>) =&gt;</span> {
+  <span class="hljs-keyword">const</span> isPortrait = matches.<span class="hljs-property">portrait</span>;
+  <span class="hljs-title function_">createTimeline</span>().<span class="hljs-title function_">add</span>(<span class="hljs-string">'.circle'</span>, {
+    <span class="hljs-attr">y</span>: isPortrait ? <span class="hljs-number">0</span> : [-<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, -<span class="hljs-number">50</span>],
+    <span class="hljs-attr">x</span>: isPortrait ? [-<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, -<span class="hljs-number">50</span>] : <span class="hljs-number">0</span>,
+  }, <span class="hljs-title function_">stagger</span>(<span class="hljs-number">100</span>));
+});
+</code><button title="Copy" class="copy-button ui-input"><svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="currentColor" fill-rule="nonzero" d="M17,5.25 C17.9664983,5.25 18.75,6.03350169 18.75,7 L18.75,13 C18.75,13.9664983 17.9664983,14.75 17,14.75 L14.75,14.75 L14.75,17 C14.75,17.9664983 13.9664983,18.75 13,18.75 L7,18.75 C6.03350169,18.75 5.25,17.9664983 5.25,17 L5.25,11 C5.25,10.0335017 6.03350169,9.25 7,9.25 L9.25,9.25 L9.25,7 C9.25,6.03350169 10.0335017,5.25 11,5.25 L17,5.25 Z M9.25,10.75 L7,10.75 C6.86192881,10.75 6.75,10.8619288 6.75,11 L6.75,17 C6.75,17.1380712 6.86192881,17.25 7,17.25 L13,17.25 C13.1380712,17.25 13.25,17.1380712 13.25,17 L13.25,14.75 L11,14.75 C10.0335017,14.75 9.25,13.9664983 9.25,13 L9.25,10.75 Z M17,6.75 L11,6.75 C10.8619288,6.75 10.75,6.86192881 10.75,7 L10.75,13 C10.75,13.1380712 10.8619288,13.25 11,13.25 L17,13.25 C17.1380712,13.25 17.25,13.1380712 17.25,13 L17.25,7 C17.25,6.86192881 17.1380712,6.75 17,6.75 Z"></path>
+    <polyline stroke="var(--hex-green-1)" stroke-width="1.75" points="5 12 10 17 19 8" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" style="stroke-linecap: butt;"></polyline>
+  </g>
+</svg></button></pre>
+    <div class="modules-sizes section-card formatted-text" data-card="modules" data-enter-offset="-=50lvh" data-leave-offset="-=150lvh" style="transform: translateY(120%); opacity: 0;">
+      <div class="box-heading">
+        <h3>Bundle size</h3>
+        <div class="modules-bundle-size"><span class="size">27.13</span> KB</div>
+      </div>
+      <div class="modules-sizes-chart chart">
+        <div data-size="3.50" class="chart-bar module-waapi color-waapi" style="width: 12.9008%;"></div>
+        <div data-size="0.55" class="chart-bar module-timeline color-timeline" style="width: 2.02728%;"></div>
+        <div data-size="0.48" class="chart-bar module-stagger color-utils" style="width: 1.76926%;"></div>
+        <div data-size="0.35" class="chart-bar module-svg color-svg" style="width: 1.29008%;"></div>
+        <div data-size="0.52" class="chart-bar module-spring color-easings" style="width: 1.9167%;"></div>
+        <div data-size="5.60" class="chart-bar module-timer color-timer" style="width: 20.6414%;"></div>
+        <div data-size="4.30" class="chart-bar module-scroll color-events" style="width: 15.8496%;"></div>
+        <div data-size="5.20" class="chart-bar module-animation color-animation" style="width: 19.167%;"></div>
+        <div data-size="6.41" class="chart-bar module-draggable color-draggable" style="width: 23.627%;"></div>
+        <div data-size="0.22" class="chart-bar module-scope color-scope" style="width: 0.81091%;"></div>
+      </div>
+      <ul class="modules-list">
+        <li><span class="label-dot color-timer"></span>Timer <span class="size">5.60 KB</span></li>
+        <li><span class="label-dot color-animation"></span>Animation <span class="size">+5.20 KB</span></li>
+        <li><span class="label-dot color-timeline"></span>Timeline <span class="size">+0.55 KB</span></li>
+        <li><span class="label-dot color-animatable"></span>Animatable <span class="size">+0.40 KB</span></li>
+        <li><span class="label-dot color-draggable"></span>Draggable <span class="size">+6.41 KB</span></li>
+        <li><span class="label-dot color-events"></span>Scroll <span class="size">+4.30 KB</span></li>
+        <li><span class="label-dot color-scope"></span>Scope <span class="size">+0.22 KB</span></li>
+        <li><span class="label-dot color-svg"></span>SVG <span class="size">0.35 KB</span></li>
+        <li><span class="label-dot color-utils"></span>Stagger <span class="size">+0.48 KB</span></li>
+        <li><span class="label-dot color-easings"></span>Spring <span class="size">0.52 KB</span></li>
+        <li><span class="label-dot color-waapi"></span>WAAPI <span class="size">3.50 KB</span></li>
+      </ul>
+    </div>
+    <div class="funding-level-box section-card formatted-text" data-card="sponsors" data-enter-offset="-=50lvh" data-leave-offset="-=50lvh" style="transform: translateY(120%); opacity: 0;">
+      <funding-level path="github-sponsors">
+      <div class="box-heading">
+        <h3>Funding goal</h3>
+        <div class="funding-level-status"><span class="percents">13%</span></div>
+      </div>
+      <div class="chart">
+        <div style="width: 12.6%;" class="chart-bar color-red"></div>
+      </div>
+      <div class="sponsors-list"><a class="sponsor" href="https://github.com/mxta-o" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/109645758_1d84vm.png" alt="Jaelan"></figure><span>Jaelan</span></a><a class="sponsor" href="https://github.com/origamisage" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/24833827_1b8up9.png" alt="origamisage"></figure><span>origamisage</span></a><a class="sponsor" href="https://github.com/jeremyvienney" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/1255528_2ku22x.jpg" alt="Jérémy Vienney"></figure><span>Jérémy Vienney</span></a><a class="sponsor" href="https://github.com/nevidomy" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/335118_yjnp0r.png" alt="Vitalii Nevidomyi"></figure><span>Vitalii Nevidomyi</span></a><a class="sponsor" href="https://github.com/chrlsdesign" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/95952866_1vz2tm.png" alt="Charles"></figure><span>Charles</span></a><a class="sponsor" href="https://github.com/EvGreen" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/1417323_lgs443.png" alt=""></figure><span>EvGreen</span></a><a class="sponsor" href="https://github.com/aaroniker" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/4730431_1aylve.png" alt="Aaron Iker"></figure><span>Aaron Iker</span></a><a class="sponsor" href="https://github.com/JosephClay" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/4593699_yjnp0r.jpg" alt="Joseph Clay"></figure><span>Joseph Clay</span></a><a class="sponsor" href="https://github.com/davidwebca" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/412352_1q0ff3.jpg" alt="David Lapointe Gilbert"></figure><span>David Lapointe Gilbert</span></a><a class="sponsor" href="https://github.com/FabulousCodingFox" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/78906517_1xls6b.jpg" alt="Fabian Fuchs"></figure><span>Fabian Fuchs</span></a><a class="sponsor" href="https://github.com/bparrillo" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/11381341_yjnp0r.png" alt=""></figure><span>bparrillo</span></a><a class="sponsor" href="https://github.com/Heini766" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/203968980_6xwa7o.png" alt=""></figure><span>Heini766</span></a><a class="sponsor" href="https://github.com/mattgperry" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/7850794_14wvhi.jpg" alt="Matt Perry"></figure><span>Matt Perry</span></a><a class="sponsor" href="https://github.com/twfahey1" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/6699959_1iywnh.png" alt="Tyler Fahey"></figure><span>Tyler Fahey</span></a><a class="sponsor" href="https://github.com/devqrofertas" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/171258970_yjnp0r.png" alt=""></figure><span>devqrofertas</span></a><a class="sponsor" href="https://github.com/michelducker" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/123018012_yjnp0r.png" alt=""></figure><span>michelducker</span></a><a class="sponsor" href="https://github.com/Ehriqhck" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/22761713_yjnp0r.png" alt="Eric Yang"></figure><span>Eric Yang</span></a><a class="sponsor" href="https://github.com/spartanberserker" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/24498666_yjnp0r.jpg" alt="Nicolaj Andersen"></figure><span>Nicolaj Andersen</span></a><a class="sponsor" href="https://github.com/elrondshep" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/7118754_jy9bnt.png" alt="Elrond"></figure><span>Elrond</span></a><a class="sponsor" href="https://github.com/cameralibre" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/15368010_1k5vq1.jpg" alt="Sam Muirhead"></figure><span>Sam Muirhead</span></a><a class="sponsor" href="https://github.com/qonvoy" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/15028082_yjnp0r.png" alt="Qonvoy"></figure><span>Qonvoy</span></a><a class="sponsor" href="https://github.com/areus" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/579887_xbj1ln.png" alt="Aaron Wade"></figure><span>Aaron Wade</span></a><a class="sponsor" href="https://github.com/Azizultra32" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/123049964_yjnp0r.png" alt="AliGGGG"></figure><span>AliGGGG</span></a><a class="sponsor" href="https://github.com/yellow1912" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/374134_yjnp0r.png" alt=""></figure><span>yellow1912</span></a><a class="sponsor" href="https://github.com/lukeandphil" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/320223432_vhtnqe.png" alt=""></figure><span>lukeandphil</span></a><a class="sponsor" href="https://github.com/pzuraq" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/685518_1d5ady.jpg" alt="Kristen"></figure><span>Kristen</span></a><a class="sponsor" href="https://github.com/T0raT" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/14097554_6okaja.png" alt="TigerLiu"></figure><span>TigerLiu</span></a><a class="sponsor" href="https://github.com/b0o" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/21299126_1drz2l.png" alt="Maddison Cohodas"></figure><span>Maddison Cohodas</span></a><a class="sponsor" href="https://github.com/csskiller" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/38730517_184mkw.png" alt=""></figure><span>csskiller</span></a><a class="sponsor" href="https://github.com/Makio64" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/213351_yjnp0r.png" alt="Makio64"></figure><span>Makio64</span></a><a class="sponsor" href="https://github.com/willmcinnis" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/52384531_yjnp0r.jpg" alt=""></figure><span>willmcinnis</span></a><a class="sponsor" href="https://github.com/otacke" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/16688047_1vrb4u.jpg" alt="Oliver Tacke"></figure><span>Oliver Tacke</span></a><a class="sponsor" href="https://github.com/LambdaTest-Inc" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/171592363_x49pfv.png" alt="TestMu AI Open Source Office (Formerly LambdaTest)"></figure><span>TestMu AI Open Source Office (Formerly LambdaTest)</span></a><a class="sponsor" href="https://github.com/BGS-RGonzalez" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/30808859_wk30o0.png" alt="Ricardo Gonzalez"></figure><span>Ricardo Gonzalez</span></a><a class="sponsor" href="https://github.com/johanviberg" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/1492806_e9a4a.jpg" alt="Johan Viberg"></figure><span>Johan Viberg</span></a><a class="sponsor" href="https://github.com/PP-Tom" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/140085084_yjnp0r.png" alt=""></figure><span>PP-Tom</span></a><a class="sponsor" href="https://github.com/masegraye" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/9310_11phui.jpg" alt="Mase Graye"></figure><span>Mase Graye</span></a><a class="sponsor" href="https://github.com/eas4ai" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/7050547_19ch14.jpg" alt="Shawn McAllister"></figure><span>Shawn McAllister</span></a><a class="sponsor" href="https://github.com/miguelbermudez" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/456538_j63u19.png" alt="Miguel Bermudez"></figure><span>Miguel Bermudez</span></a><a class="sponsor" href="https://github.com/onuro" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/645713_yjnp0r.png" alt="Onur Oztaskiran"></figure><span>Onur Oztaskiran</span></a><a class="sponsor" href="https://github.com/iamrobert" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/8617673_mcv0r6.jpg" alt="Robert Stark"></figure><span>Robert Stark</span></a><a class="sponsor" href="https://github.com/soerenmeier" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/16178877_1wra9l.jpg" alt="Sören Meier"></figure><span>Sören Meier</span></a><a class="sponsor" href="https://github.com/emvibrand" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/217863722_yjnp0r.png" alt=""></figure><span>emvibrand</span></a><a class="sponsor" href="https://github.com/vonscriptor" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/1682225_116ca0.jpg" alt="Eric Van Holtz"></figure><span>Eric Van Holtz</span></a><a class="sponsor" href="https://github.com/illestrater" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/8601493_9zhkyq.png" alt="Tim Kang"></figure><span>Tim Kang</span></a><a class="sponsor" href="https://github.com/satoshionoda" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/4291354_1i4svj.jpg" alt=""></figure><span>satoshionoda</span></a><a class="sponsor" href="https://github.com/maro525" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/13168561_hsryim.jpg" alt="HdmrF"></figure><span>HdmrF</span></a><a class="sponsor" href="https://github.com/glauberorg" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/4266359_1soyre.jpg" alt="Glauber"></figure><span>Glauber</span></a><a class="sponsor" href="https://github.com/daltongray" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/14859935_2po05p.jpg" alt="Dalton Gray"></figure><span>Dalton Gray</span></a><a class="sponsor" href="https://github.com/Aurora-creeper" target="_blank" rel="noopener noreferrer" style="opacity: 1; transform: scale(1);"><figure><img src="_external/avatars.githubusercontent.com/u/47975771_kpzfnx.png" alt="Astral_rider"></figure><span>Astral_rider</span></a></div>
+      <p>
+        Support the project, <sponsor-button data-color="0"><a href="https://github.com/sponsors/juliangarnier" target="_blank">become a sponsor</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon particle" style="position: absolute; top: -12px; left: -12px; mix-blend-mode: plus-lighter; visibility: hidden;"><g id="sponsor" fill="none" fill-rule="evenodd"><path fill="currentColor" fill-rule="nonzero" d="M12 18.445a.778.778 0 0 1-.34-.078C11.39 18.235 5 15.077 5 9.889a3.889 3.889 0 0 1 6.638-2.75L12 7.5l.362-.361A3.889 3.889 0 0 1 19 9.889c0 5.17-6.387 8.344-6.66 8.478a.778.778 0 0 1-.34.078z"></path></g></svg></sponsor-button>.
+      </p>
+    </funding-level>
+    </div>
+  </div>
+  <footer id="site-footer" class="layout-container text-ui" data-color="fg">
+  <div id="site-footer-content">
+    <div class="footer-row">
+      <div class="footer-block footer-block-sponsors">
+        <h6 class="links-list-heading">Sponsors</h6>
+        <div id="carbon-responsive" class="carbon-ad">
+  <script async="" type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CWBITK77&amp;placement=animejscom&amp;format=responsive" id="_carbonads_js"></script>
+</div>
+                  <ul class="links-list">
+                                          <li>  <a class="sponsor" href="https://github.com/sponsors/juliangarnier" target="_blank" title="Become a sponsor" data-url-params="" data-url-params-docs="">
+          <img src="media/pages/sponsors/platinum-sponsors/ef1c9c6c85-1787698629/sponsor-placeholder.svg" alt="Become a sponsor" width="100" height="100" loading="lazy">
+        <span>Become a sponsor</span>
+  </a>
+</li>
+                                    </ul>
+              </div>
+      <div class="footer-block footer-block-links">
+        <div class="footer-block">
+          <h6 class="links-list-heading">Site</h6>
+          <ul class="links-list">
+            <li><a href="index.html" title="Documentation">Home</a></li>
+            <li><a href="https://animejs.com/documentation" title="Documentation">Documentation</a></li>
+            <li><a href="https://animejs.com/easing-editor" title="Easing functions editor">Easings editor</a></li>
+            <li><a href="https://animejs.com/learn" title="Learn">Learn</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h6 class="links-list-heading">Socials</h6>
+          <ul class="links-list">
+            <li><a target="_blank" href="https://x.com/juliangarnier">X / Twitter</a></li>
+            <li><a target="_blank" href="https://bsky.app/profile/animejs.com">Bluesky</a></li>
+            <li><a target="_blank" href="https://github.com/juliangarnier/anime">GitHub</a></li>
+            <li><a target="_blank" href="https://codepen.io/collection/Poerqa">CodePen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-row">
+      <div class="footer-block footer-logo-block">
+        <div class="heading-logo footer-logo">
+          <a href="index.html">
+            <img src="assets/images/anime-js-logo-v4.svg" alt="anime.js logo v4" width="580" height="118">
+            <span>Anime.js | JavaScript Animation Engine</span>
+          </a>
+        </div>
+        <div class="footer-copyright">
+          © 2026 <a href="https://juliangarnier.com/" target="_blank">Julian Garnier</a>
+        </div>
+      </div>
+      <div class="footer-block">
+        <h6 class="links-list-heading">Stay in the loop</h6>
+        <email-signup url="https://buttondown.com/api/emails/embed-subscribe/juliangarnier?tag=footer" class="email-signup-form">
+          <form>
+  <div id="form-fields" class="email-signup-fields is-active">
+    <input class="email-signup-field email-signup-input" type="email" name="email" placeholder="Enter your email" required="">
+    <input class="email-signup-field email-signup-submit text-ui" type="submit" value="Subscribe">
+  </div>
+
+  <div id="success-message" class="email-signup-alert email-signup-success">
+    <p>Thanks! Check your inbox to confirm your subscription.</p>
+  </div>
+
+  <div id="error-message" class="email-signup-alert email-signup-error">
+    <p>Something went wrong. Please try again later or email me directly at <a href="mailto:julian@animejs.com">julian@animejs.com</a></p>
+  </div>
+</form>        </email-signup>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+<div id="engine"><canvas data-engine="three.js r172" width="2528" height="1296" id="renderer" style="display: block; width: 1264px; height: 648px; position: absolute; top: 0px; left: 0px;"></canvas><div id="css-renderer" style="overflow: hidden; width: 1264px; height: 648px; position: absolute; top: 0px; left: 0px;"><div style="transform-origin: 0px 0px; pointer-events: none; width: 1264px; height: 648px;"><div style="transform-style: preserve-3d; width: 1264px; height: 648px; transform: perspective(890.183px) scale(1) translateZ(890.183px) matrix3d(1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, -120, 1) translate(632px, 324px);"><div class="output" draggable="false" style="pointer-events: auto; position: absolute; user-select: none; transform: translate(-50%, -50%) matrix3d(0.05, 0, 0, 0, 0, -0.05, 0, 0, 0, 0, 0.05, 0, 0, 0, 83, 1);">
+      <svg class="output-progress-bg" viewBox="0 0 614 614" style="opacity: 1;">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="5">
+          <path d="M310.500816,16.5151574 C388.463924,17.3029412 459.084769,48.7495124 510.882318,99.3738384" class="color-getting-started" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M515.130663,103.611934 C565.939831,155.348014 597.563252,225.989466 598.479596,304.014416" class="color-animation" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M598.488972,310.001429 C597.830864,388.162526 566.358163,458.974586 515.625661,510.882819" class="color-turquoise" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M511.387565,515.131164 C459.543848,566.04604 388.716012,597.695256 310.497994,598.484871" class="color-utils" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M304.498499,598.484829 C226.280452,597.694123 155.454223,566.04513 103.611433,515.131164" class="color-svg" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M99.3733373,510.882819 C48.6401567,458.973892 17.1672932,388.160634 16.51,309.998296" class="color-draggable" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M16.5201414,303.999 C17.4402555,225.979392 49.06279,155.344325 99.8683349,103.611934" class="color-timeline" style="stroke-width: 5px; opacity: 1;"></path>
+          <path d="M104.11668,99.3738384 C155.911216,48.7524579 226.526856,17.3066006 304.484574,16.5150897" class="color-green" style="stroke-width: 5px; opacity: 1;"></path>
+        </g>
+      </svg>
+      <svg class="output-progress" viewBox="0 0 614 614" style="opacity: 1;">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="5">
+          <path d="M310.500816,16.5151574 C388.463924,17.3029412 459.084769,48.7495124 510.882318,99.3738384" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-getting-started" style="stroke-width: 5px;"></path>
+          <path d="M515.130663,103.611934 C565.939831,155.348014 597.563252,225.989466 598.479596,304.014416" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-animation" style="stroke-width: 5px;"></path>
+          <path d="M598.488972,310.001429 C597.830864,388.162526 566.358163,458.974586 515.625661,510.882819" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-turquoise" style="stroke-width: 5px;"></path>
+          <path d="M511.387565,515.131164 C459.543848,566.04604 388.716012,597.695256 310.497994,598.484871" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-utils" style="stroke-width: 5px;"></path>
+          <path d="M304.498499,598.484829 C226.280452,597.694123 155.454223,566.04513 103.611433,515.131164" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-svg" style="stroke-width: 5px;"></path>
+          <path d="M99.3733373,510.882819 C48.6401567,458.973892 17.1672932,388.160634 16.51,309.998296" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-draggable" style="stroke-width: 5px;"></path>
+          <path d="M16.5201414,303.999 C17.4402555,225.979392 49.06279,155.344325 99.8683349,103.611934" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-timeline" style="stroke-width: 5px;"></path>
+          <path d="M104.11668,99.3738384 C155.911216,48.7524579 226.526856,17.3066006 304.484574,16.5150897" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0" class="color-green" style="stroke-width: 5px;"></path>
+        </g>
+      </svg>
+
+      <div id="intuitive-demo" class="feature-demo color-getting-started" style="opacity: 0.0011;">
+        <div class="shape square fill" style="transform: rotate(88.5272deg) scale(0);"></div>
+      </div>
+
+      <div id="additive-demo" class="feature-demo color-animation" style="opacity: 0.001;">
+        <div class="shape circle" style="transform: translate(-1.0817px, -70.0984px) rotate(-3.7563deg) scale(0);"></div>
+        <div class="shape square" style="transform: translate(8.1427px, -3.6325px) rotate(-0.8516deg) scale(0);"></div>
+        <div class="shape circle fill" style="transform: translate(-4.8934px, 0.1608px) rotate(-0.2164deg) scale(0);"></div>
+        <div class="shape square fill" style="transform: translate(1.3885px, -0.3706px) rotate(-0.6917deg) scale(0);"></div>
+        <div class="shape circle" style="transform: translate(-2.0662px, 20.0955px) rotate(2.3158deg) scale(0);"></div>
+        <div class="shape square" style="transform: translate(-0.2049px, -0.1178px) rotate(2.3497deg) scale(0);"></div>
+        <div class="shape circle fill" style="transform: translate(-2.1139px, -2.3874px) rotate(-51.9076deg) scale(0);"></div>
+        <div class="shape square fill" style="transform: translate(-0.1697px, -13.9777px) rotate(-0.7369deg) scale(0);"></div>
+        <div class="shape circle" style="transform: translate(0.1342px, -0.2735px) rotate(4.6179deg) scale(0);"></div>
+        <div class="shape square" style="transform: translate(1.3514px, 63.3827px) rotate(-41.2017deg) scale(0);"></div>
+        <div class="shape circle fill" style="transform: translate(-0.2574px, 43.6832px) rotate(0.5019deg) scale(0);"></div>
+        <div class="shape square fill" style="transform: translate(41.9258px, 5.1308px) rotate(33.989deg) scale(0);"></div>
+      </div>
+
+      <div id="scrollable-demo" class="feature-demo color-turquoise" style="opacity: 0.001;">
+        <svg id="sphere-animation" viewBox="0 0 402 402">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M342.057269,342.05826 C317.650269,366.46626 290.938269,379.32826 282.395269,370.78526 C273.853269,362.24226 286.714269,335.53026 311.121269,311.12226 C335.529269,286.71526 362.241269,273.85326 370.784269,282.39626 C379.326269,290.93926 366.465269,317.65126 342.057269,342.05826 L342.057269,342.05826 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(0.0256px, 0.0256px); stroke-width: 3.0064px;"></path>
+            <path d="M341.173269,341.17426 C305.294269,377.05426 265.919269,395.85126 253.227269,383.15926 C240.535269,370.46726 259.332269,331.09226 295.212269,295.21226 C331.091269,259.33326 370.466269,240.53626 383.158269,253.22826 C395.850269,265.92026 377.053269,305.29526 341.174269,341.17426 L341.173269,341.17426 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(2.1678px, 2.1678px); stroke-width: 3.5419px;"></path>
+            <path d="M337.638269,337.63926 C292.728269,382.54926 243.262269,405.89726 227.153269,389.78826 C211.043269,373.67826 234.391269,324.21326 279.302269,279.30326 C324.212269,234.39326 373.678269,211.04426 389.787269,227.15326 C405.897269,243.26326 382.548269,292.72926 337.638269,337.63926 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.4908px, 3.4908px); stroke-width: 3.8727px;"></path>
+            <path d="M331.451269,331.45226 C278.241269,384.66126 219.872269,412.55926 201.078269,393.76526 C182.284269,374.97226 210.183269,316.60226 263.392269,263.39326 C316.601269,210.18326 374.971269,182.28526 393.765269,201.07926 C412.559269,219.87326 384.660269,278.24326 331.451269,331.45226 L331.451269,331.45226 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.9946px, 3.9946px); stroke-width: 3.9986px;"></path>
+            <path d="M323.496269,323.49726 C263.696269,383.29626 198.204269,414.75726 177.213269,393.76526 C156.223269,372.77526 187.683269,307.28226 247.482269,247.48326 C307.281269,187.68326 372.774269,156.22326 393.765269,177.21426 C414.755269,198.20426 383.295269,263.69826 323.495269,323.49726 L323.496269,323.49726 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.7772px, 3.7772px); stroke-width: 3.9443px;"></path>
+            <path d="M315.099269,315.10026 C249.930269,380.26926 178.402269,414.40026 155.337269,391.33526 C132.272269,368.26926 166.403269,296.74226 231.572269,231.57326 C296.741269,166.40426 368.269269,132.27326 391.334269,155.33826 C414.399269,178.40326 380.268269,249.93126 315.099269,315.10026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(2.9893px, 2.9893px); stroke-width: 3.7473px;"></path>
+            <path d="M305.376269,305.37726 C235.570269,375.18326 158.996269,411.78826 134.345269,387.13726 C109.693269,362.48526 146.298269,285.91126 216.104269,216.10526 C285.910269,146.29926 362.484269,109.69426 387.135269,134.34526 C411.787269,158.99826 375.182269,235.57126 305.376269,305.37726 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(1.6325px, 1.6325px); stroke-width: 3.4081px;"></path>
+            <path d="M293.443269,293.44526 C220.221269,366.66826 139.888269,405.05426 114.015269,379.18126 C88.143269,353.30926 126.529269,272.97626 199.752269,199.75326 C272.975269,126.53026 353.308269,88.1442597 379.181269,114.01626 C405.053269,139.88926 366.667269,220.22126 293.444269,293.44526 L293.443269,293.44526 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-0.2828px, -0.2828px); stroke-width: 2.9293px;"></path>
+            <path d="M280.628269,280.62826 C204.719269,356.53726 121.518269,396.40626 94.791269,369.68026 C68.065269,342.95326 107.934269,259.75126 183.842269,183.84326 C259.750269,107.93526 342.952269,68.0652597 369.679269,94.7922597 C396.405269,121.51826 356.536269,204.72026 280.628269,280.62826 L280.628269,280.62826 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-2.0549px, -2.0549px); stroke-width: 2.4863px;"></path>
+            <path d="M265.160269,265.16026 C187.543269,342.77726 102.857269,383.93326 76.008269,357.08426 C49.160269,330.23626 90.316269,245.55026 167.932269,167.93426 C245.549269,90.3162597 330.235269,49.1602597 357.083269,76.0082597 C383.932269,102.85726 342.776269,187.54326 265.160269,265.15926 L265.160269,265.16026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-3.2581px, -3.2581px); stroke-width: 2.1855px;"></path>
+            <path d="M249.692269,248.80926 C171.587269,326.91326 86.505269,368.46526 59.657269,341.61626 C32.808269,314.76826 74.360269,229.68626 152.464269,151.58126 C230.569269,73.4772597 315.651269,31.9252597 342.499269,58.7742597 C369.348269,85.6222597 327.796269,170.70426 249.692269,248.80926 L249.692269,248.80926 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-3.8924px, -3.8924px); stroke-width: 2.0269px;"></path>
+            <path d="M233.340269,233.34026 C155.723269,310.95826 71.037269,352.11426 44.189269,325.26626 C17.340269,298.41626 58.496269,213.73026 136.113269,136.11326 C213.729269,58.4972597 298.415269,17.3412597 325.263269,44.1902597 C352.113269,71.0382597 310.956269,155.72426 233.340269,233.34026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-3.9393px, -3.9393px); stroke-width: 2.0152px;"></path>
+            <path d="M217.430269,217.43026 C141.522269,293.34026 58.320269,333.20926 31.593269,306.48326 C4.86726902,279.75626 44.736269,196.55526 120.645269,120.64626 C196.553269,44.7382597 279.755269,4.86925972 306.481269,31.5962597 C333.208269,58.3222597 293.338269,141.52426 217.430269,217.43226 L217.430269,217.43026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-3.2143px, -3.2143px); stroke-width: 2.1964px;"></path>
+            <path d="M201.520269,201.52026 C128.297269,274.74526 47.963269,313.13026 22.092269,287.25926 C-3.78073098,261.38626 34.605269,181.05326 107.828269,107.83026 C181.053269,34.6062597 261.384269,-3.77974028 287.257269,22.0922597 C313.129269,47.9652597 274.743269,128.29826 201.520269,201.52126 L201.520269,201.52026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(-1.6701px, -1.6701px); stroke-width: 2.5825px;"></path>
+            <path d="M185.610269,185.61026 C115.804269,255.41726 39.230269,292.02226 14.579269,267.37026 C-10.072731,242.71826 26.532269,166.14526 96.338269,96.3392597 C166.144269,26.5322597 242.718269,-10.0717403 267.369269,14.5792597 C292.021269,39.2312597 255.416269,115.80526 185.610269,185.61126 L185.610269,185.61026 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(0.6379px, 0.6379px); stroke-width: 3.1595px;"></path>
+            <path d="M169.700269,169.70126 C104.531269,234.87026 33.004269,269.00126 9.93826902,245.93626 C-13.126731,222.87126 21.004269,151.34326 86.173269,86.1742597 C151.342269,21.0052597 222.870269,-13.1257403 245.935269,9.93925972 C269.000269,33.0042597 234.869269,104.53226 169.700269,169.70126 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(2.5753px, 2.5753px); stroke-width: 3.6438px;"></path>
+            <path d="M153.790269,153.79126 C93.991269,213.59126 28.498269,245.05126 7.50826902,224.06026 C-13.482731,203.07026 17.978269,137.57626 77.776269,77.7772597 C137.576269,17.9782597 203.068269,-13.4827403 224.059269,7.50825972 C245.049269,28.4992597 213.589269,93.9922597 153.790269,153.79126 L153.790269,153.79126 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.6935px, 3.6935px); stroke-width: 3.9234px;"></path>
+            <path d="M137.880269,137.88126 C84.671269,191.09126 26.302269,218.98926 7.50826902,200.19526 C-11.285731,181.40126 16.612269,123.03126 69.821269,69.8222597 C123.031269,16.6132597 181.401269,-11.2857403 200.194269,7.50825972 C218.988269,26.3022597 191.089269,84.6722597 137.880269,137.88126 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.9948px, 3.9948px); stroke-width: 3.9987px;"></path>
+            <path d="M121.970269,121.97126 C77.060269,166.88126 27.594269,190.23026 11.485269,174.12126 C-4.62473098,158.01126 18.724269,108.54526 63.635269,63.6352597 C108.545269,18.7252597 158.010269,-4.62274028 174.120269,11.4852597 C190.229269,27.5952597 166.880269,77.0612597 121.970269,121.97126 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(3.6336px, 3.6336px); stroke-width: 3.9084px;"></path>
+            <path d="M106.061269,106.06126 C70.181269,141.94126 30.806269,160.73826 18.114269,148.04626 C5.42226902,135.35426 24.219269,95.9792597 60.099269,60.0992597 C95.978269,24.2202597 135.353269,5.42325972 148.045269,18.1152597 C160.737269,30.8072597 141.940269,70.1822597 106.061269,106.06126 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(2.7034px, 2.7034px); stroke-width: 3.6759px;"></path>
+            <path d="M90.151269,90.1522597 C65.743269,114.55926 39.031269,127.42026 30.488269,118.87826 C21.946269,110.33526 34.807269,83.6232597 59.215269,59.2162597 C83.622269,34.8082597 110.335269,21.9462597 118.877269,30.4892597 C127.420269,39.0322597 114.558269,65.7442597 90.151269,90.1522597 Z" fill-rule="nonzero" stroke-dasharray="0 1010" pathLength="1000" stroke-dashoffset="0" draw="0 0" style="transform: translate(1.2044px, 1.2044px); stroke-width: 3.3011px;"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div id="staggering-demo" class="feature-demo color-utils" style="opacity: 0.001;">
+      <canvas width="800" height="800" class="staggering-canvas grid-canvas" style="width: 400px; height: 400px;"></canvas></div>
+
+      <div id="drawable-demo" class="feature-demo color-svg" style="opacity: 0.001;">
+        <div class="svg-tracks">
+          <svg class="svg-track svg-track-bg" opacity=".4" viewBox="0 0 304 112" style="transform: translateZ(0px) rotateX(90deg) rotateZ(0deg) scale(0.8);"><g stroke="none" fill="none" fill-rule="evenodd"><path d="M189.142857,4 C227.456875,4 248.420457,4.00974888 256.864191,4.00974888 C263.817211,4.00974888 271.61219,3.69583517 274.986231,6.63061513 C276.382736,7.84531176 279.193529,11.3814152 280.479499,13.4815847 C281.719344,15.5064248 284.841964,20.3571626 275.608629,20.3571626 C265.817756,20.3571626 247.262478,19.9013915 243.955117,19.9013915 C239.27946,19.9013915 235.350655,24.7304885 228.6344,24.7304885 C224.377263,24.7304885 219.472178,21.0304113 214.535324,21.0304113 C207.18393,21.0304113 200.882842,30.4798911 194.124187,30.4798911 C186.992968,30.4798911 182.652552,23.6245972 173.457298,23.6245972 C164.83277,23.6245972 157.191045,31.5424105 157.191045,39.1815359 C157.191045,48.466779 167.088672,63.6623005 166.666679,66.9065088 C166.378668,69.1206889 155.842137,79.2568633 151.508744,77.8570506 C145.044576,75.7689355 109.126667,61.6405346 98.7556561,52.9785141 C96.4766876,51.0750861 89.3680347,39.5769094 83.4195005,38.5221785 C80.6048001,38.0231057 73.0179337,38.7426555 74.4158694,42.6956376 C76.7088819,49.1796531 86.3280337,64.1214904 87.1781062,66.9065088 C88.191957,70.2280995 86.4690152,77.0567847 82.2060607,79.2503488 C79.2489435,80.7719756 73.1324132,82.8858479 64.7015706,83.0708761 C55.1604808,83.2802705 44.4254811,80.401884 39.1722168,80.401884 C25.7762119,80.401884 24.3280517,89.1260466 22.476679,94.4501705 C21.637667,96.8629767 20.4337535,108 33.2301959,108 C37.8976087,108 45.0757044,107.252595 53.4789069,103.876424 C61.8821095,100.500252 122.090049,78.119656 128.36127,75.3523302 C141.413669,69.5926477 151.190142,68.4987755 147.018529,52.0784879 C143.007818,36.291544 143.396957,23.4057975 145.221196,19.6589263 C146.450194,17.1346449 148.420955,14.8552817 153.206723,15.7880203 C155.175319,16.1716965 155.097637,15.0525421 156.757598,11.3860986 C158.417558,7.71965506 161.842736,4.00974888 167.736963,4.00974888 C177.205308,4.00974888 184.938832,4 189.142857,4 Z" stroke="currentColor" stroke-width="6" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="1000 0" draw="0 1"></path></g></svg>
+          <svg class="svg-track svg-track-higlight" viewBox="0 0 304 112" style="transform: translateZ(0px) rotateX(90deg) rotateZ(0deg) scale(0.8);"><g stroke="none" fill="none" fill-rule="evenodd"><path d="M189.142857,4 C227.456875,4 248.420457,4.00974888 256.864191,4.00974888 C263.817211,4.00974888 271.61219,3.69583517 274.986231,6.63061513 C276.382736,7.84531176 279.193529,11.3814152 280.479499,13.4815847 C281.719344,15.5064248 284.841964,20.3571626 275.608629,20.3571626 C265.817756,20.3571626 247.262478,19.9013915 243.955117,19.9013915 C239.27946,19.9013915 235.350655,24.7304885 228.6344,24.7304885 C224.377263,24.7304885 219.472178,21.0304113 214.535324,21.0304113 C207.18393,21.0304113 200.882842,30.4798911 194.124187,30.4798911 C186.992968,30.4798911 182.652552,23.6245972 173.457298,23.6245972 C164.83277,23.6245972 157.191045,31.5424105 157.191045,39.1815359 C157.191045,48.466779 167.088672,63.6623005 166.666679,66.9065088 C166.378668,69.1206889 155.842137,79.2568633 151.508744,77.8570506 C145.044576,75.7689355 109.126667,61.6405346 98.7556561,52.9785141 C96.4766876,51.0750861 89.3680347,39.5769094 83.4195005,38.5221785 C80.6048001,38.0231057 73.0179337,38.7426555 74.4158694,42.6956376 C76.7088819,49.1796531 86.3280337,64.1214904 87.1781062,66.9065088 C88.191957,70.2280995 86.4690152,77.0567847 82.2060607,79.2503488 C79.2489435,80.7719756 73.1324132,82.8858479 64.7015706,83.0708761 C55.1604808,83.2802705 44.4254811,80.401884 39.1722168,80.401884 C25.7762119,80.401884 24.3280517,89.1260466 22.476679,94.4501705 C21.637667,96.8629767 20.4337535,108 33.2301959,108 C37.8976087,108 45.0757044,107.252595 53.4789069,103.876424 C61.8821095,100.500252 122.090049,78.119656 128.36127,75.3523302 C141.413669,69.5926477 151.190142,68.4987755 147.018529,52.0784879 C143.007818,36.291544 143.396957,23.4057975 145.221196,19.6589263 C146.450194,17.1346449 148.420955,14.8552817 153.206723,15.7880203 C155.175319,16.1716965 155.097637,15.0525421 156.757598,11.3860986 C158.417558,7.71965506 161.842736,4.00974888 167.736963,4.00974888 C177.205308,4.00974888 184.938832,4 189.142857,4 Z" stroke="currentColor" stroke-width="2" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></path></g></svg>
+          <div class="svg-track" style="transform: translateZ(0px) rotateX(90deg) rotateZ(0deg) scale(0.8);">
+            <div class="svg-car" style="transform: translate(248.872px, 131.579px) rotate(0.0082508deg);"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-demo color-draggable" style="opacity: 0.001;"></div>
+
+      <div id="precise-demo" class="feature-demo color-timeline" style="opacity: 0.001;">
+        <svg class="clock-grid" width="400px" height="400px" viewBox="0 0 400 400">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g class="circle-grid-drawable" opacity="1" transform="translate(18.9387, 18.9387)" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="square" stroke-width="5">
+              <path d="M287.120579,74.9885455 C259.976449,47.8478276 222.479216,31.0612724 181.061272,31.0612724" id="0.0_0.125" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M362.123934,149.987156 C334.979804,122.846438 297.482571,106.059883 256.064627,106.059883" id="0.0_0.125" transform="translate(309.0943, 128.0235) rotate(45) translate(-309.0943, -128.0235)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M362.127289,256.054562 C334.983159,228.913845 297.485926,212.127289 256.067982,212.127289" id="0.0_0.125" transform="translate(309.0976, 234.0909) rotate(90) translate(-309.0976, -234.0909)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M287.128679,331.057917 C259.984549,303.917199 222.487315,287.130644 181.069372,287.130644" id="0.0_0.125" transform="translate(234.099, 309.0943) rotate(135) translate(-234.099, -309.0943)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M181.061272,331.061272 C153.917142,303.920554 116.419909,287.133999 75.0019654,287.133999" id="0.0_0.125" transform="translate(128.0316, 309.0976) rotate(180) translate(-128.0316, -309.0976)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M106.057917,256.062662 C78.9137868,228.921944 41.4165536,212.135389 -0.00138957053,212.135389" id="0.0_0.125" transform="translate(53.0283, 234.099) rotate(225) translate(-53.0283, -234.099)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M106.054562,149.995255 C78.9104318,122.854538 41.4131986,106.067982 -0.00474459127,106.067982" id="0.0_0.125" transform="translate(53.0249, 128.0316) rotate(270) translate(-53.0249, -128.0316)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+              <path d="M181.053173,74.9919005 C153.909042,47.8511826 116.411809,31.0646274 74.9938656,31.0646274" id="0.0_0.125" transform="translate(128.0235, 53.0283) rotate(315) translate(-128.0235, -53.0283)" pathLength="1000" stroke-dashoffset="-1000" stroke-dasharray="0 1010" draw="1 1" style="stroke-width: 20px; opacity: 1;"></path>
+            </g>
+          </g>
+        </svg>
+        <div class="timeline-playhead" style="transform: rotate(0deg);"></div>
+      </div>
+      <div id="responsive-demo" class="feature-demo color-green" style="opacity: 0.001;">
+        <div class="responsive-viewport" style="width: 80%; height: 50%;">
+          <div class="shape" style="transform: translate(-110px, 0px);"><div class="circle" style="transform: translate(-42.5244px, 0px) scale(0);"></div></div>
+          <div class="shape" style="transform: translate(-55px, 0px);"><div class="circle" style="transform: translate(-49.28px, 0px) scale(1.0028);"></div></div>
+          <div class="shape" style="transform: translate(0px, 0px);"><div class="circle" style="transform: translate(-48.9244px, 0px) scale(1.0037);"></div></div>
+          <div class="shape" style="transform: translate(55px, 0px);"><div class="circle" style="transform: translate(-41.4578px, 0px) scale(1.0042);"></div></div>
+          <div class="shape" style="transform: translate(110px, 0px);"><div class="circle" style="transform: translate(-26.88px, 0px) scale(1.0043);"></div></div>
+        </div>
+      </div>
+    <canvas width="800" height="800" class="heart-canvas grid-canvas" style="width: 400px; height: 400px; transform: scale(0.001);"></canvas><canvas width="800" height="800" class="dotted-grid-canvas grid-canvas" style="width: 400px; height: 400px; opacity: 1;"></canvas><canvas width="800" height="800" class="easings-lines-canvas grid-canvas" style="width: 400px; height: 400px; transform: translateZ(15px) scale(1);"></canvas><canvas width="800" height="800" class="easings-dots-canvas grid-canvas" style="width: 400px; height: 400px; transform: translateZ(30px) scale(1);"></canvas><div class="clock" style="transform: translateZ(0px); opacity: 1;"><div class="tick" data-index="0" style="transform: translate(0px, -178px) rotate(0deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(5.824px, -177.905px) rotate(1.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(11.6418px, -177.619px) rotate(3.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(17.4471px, -177.143px) rotate(5.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(23.2337px, -176.477px) rotate(7.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(28.9954px, -175.623px) rotate(9.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(34.7261px, -174.58px) rotate(11.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(40.4196px, -173.35px) rotate(13.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(46.0698px, -171.935px) rotate(15deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(51.6707px, -170.335px) rotate(16.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(57.2162px, -168.554px) rotate(18.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(62.7005px, -166.591px) rotate(20.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(68.1177px, -164.451px) rotate(22.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(73.4619px, -162.134px) rotate(24.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(78.7274px, -159.643px) rotate(26.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(83.9086px, -156.982px) rotate(28.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(89px, -154.153px) rotate(30deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(93.9961px, -151.158px) rotate(31.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(98.8915px, -148.002px) rotate(33.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(103.681px, -144.687px) rotate(35.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(108.36px, -141.217px) rotate(37.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(112.922px, -137.596px) rotate(39.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(117.364px, -133.827px) rotate(41.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(121.679px, -129.916px) rotate(43.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(125.865px, -125.865px) rotate(45deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(129.916px, -121.679px) rotate(46.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(133.827px, -117.364px) rotate(48.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(137.596px, -112.922px) rotate(50.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(141.217px, -108.36px) rotate(52.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(144.687px, -103.681px) rotate(54.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(148.002px, -98.8915px) rotate(56.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(151.158px, -93.9961px) rotate(58.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(154.153px, -89px) rotate(60deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(156.982px, -83.9086px) rotate(61.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(159.643px, -78.7274px) rotate(63.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(162.134px, -73.4619px) rotate(65.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(164.451px, -68.1177px) rotate(67.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(166.591px, -62.7005px) rotate(69.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(168.554px, -57.2162px) rotate(71.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(170.335px, -51.6707px) rotate(73.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(171.935px, -46.0698px) rotate(75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(173.35px, -40.4196px) rotate(76.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(174.58px, -34.7261px) rotate(78.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(175.623px, -28.9954px) rotate(80.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(176.477px, -23.2337px) rotate(82.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.143px, -17.4471px) rotate(84.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.619px, -11.6418px) rotate(86.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.905px, -5.824px) rotate(88.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(178px, -1.08994e-14px) rotate(90deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.905px, 5.824px) rotate(91.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.619px, 11.6418px) rotate(93.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(177.143px, 17.4471px) rotate(95.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(176.477px, 23.2337px) rotate(97.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(175.623px, 28.9954px) rotate(99.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(174.58px, 34.7261px) rotate(101.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(173.35px, 40.4196px) rotate(103.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(171.935px, 46.0698px) rotate(105deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(170.335px, 51.6707px) rotate(106.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(168.554px, 57.2162px) rotate(108.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(166.591px, 62.7005px) rotate(110.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(164.451px, 68.1177px) rotate(112.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(162.134px, 73.4619px) rotate(114.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(159.643px, 78.7274px) rotate(116.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(156.982px, 83.9086px) rotate(118.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(154.153px, 89px) rotate(120deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(151.158px, 93.9961px) rotate(121.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(148.002px, 98.8915px) rotate(123.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(144.687px, 103.681px) rotate(125.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(141.217px, 108.36px) rotate(127.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(137.596px, 112.922px) rotate(129.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(133.827px, 117.364px) rotate(131.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(129.916px, 121.679px) rotate(133.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(125.865px, 125.865px) rotate(135deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(121.679px, 129.916px) rotate(136.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(117.364px, 133.827px) rotate(138.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(112.922px, 137.596px) rotate(140.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(108.36px, 141.217px) rotate(142.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(103.681px, 144.687px) rotate(144.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(98.8915px, 148.002px) rotate(146.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(93.9961px, 151.158px) rotate(148.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(89px, 154.153px) rotate(150deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(83.9086px, 156.982px) rotate(151.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(78.7274px, 159.643px) rotate(153.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(73.4619px, 162.134px) rotate(155.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(68.1177px, 164.451px) rotate(157.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(62.7005px, 166.591px) rotate(159.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(57.2162px, 168.554px) rotate(161.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(51.6707px, 170.335px) rotate(163.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(46.0698px, 171.935px) rotate(165deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(40.4196px, 173.35px) rotate(166.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(34.7261px, 174.58px) rotate(168.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(28.9954px, 175.623px) rotate(170.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(23.2337px, 176.477px) rotate(172.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(17.4471px, 177.143px) rotate(174.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(11.6418px, 177.619px) rotate(176.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(5.824px, 177.905px) rotate(178.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(2.17987e-14px, 178px) rotate(180deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-5.824px, 177.905px) rotate(181.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-11.6418px, 177.619px) rotate(183.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-17.4471px, 177.143px) rotate(185.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-23.2337px, 176.477px) rotate(187.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-28.9954px, 175.623px) rotate(189.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-34.7261px, 174.58px) rotate(191.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-40.4196px, 173.35px) rotate(193.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-46.0698px, 171.935px) rotate(195deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-51.6707px, 170.335px) rotate(196.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-57.2162px, 168.554px) rotate(198.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-62.7005px, 166.591px) rotate(200.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-68.1177px, 164.451px) rotate(202.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-73.4619px, 162.134px) rotate(204.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-78.7274px, 159.643px) rotate(206.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-83.9086px, 156.982px) rotate(208.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-89px, 154.153px) rotate(210deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-93.9961px, 151.158px) rotate(211.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-98.8915px, 148.002px) rotate(213.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-103.681px, 144.687px) rotate(215.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-108.36px, 141.217px) rotate(217.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-112.922px, 137.596px) rotate(219.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-117.364px, 133.827px) rotate(221.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-121.679px, 129.916px) rotate(223.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-125.865px, 125.865px) rotate(225deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-129.916px, 121.679px) rotate(226.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-133.827px, 117.364px) rotate(228.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-137.596px, 112.922px) rotate(230.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-141.217px, 108.36px) rotate(232.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-144.687px, 103.681px) rotate(234.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-148.002px, 98.8915px) rotate(236.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-151.158px, 93.9961px) rotate(238.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-154.153px, 89px) rotate(240deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-156.982px, 83.9086px) rotate(241.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-159.643px, 78.7274px) rotate(243.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-162.134px, 73.4619px) rotate(245.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-164.451px, 68.1177px) rotate(247.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-166.591px, 62.7005px) rotate(249.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-168.554px, 57.2162px) rotate(251.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-170.335px, 51.6707px) rotate(253.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-171.935px, 46.0698px) rotate(255deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-173.35px, 40.4196px) rotate(256.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-174.58px, 34.7261px) rotate(258.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-175.623px, 28.9954px) rotate(260.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-176.477px, 23.2337px) rotate(262.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.143px, 17.4471px) rotate(264.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.619px, 11.6418px) rotate(266.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.905px, 5.824px) rotate(268.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-178px, 3.26981e-14px) rotate(270deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.905px, -5.824px) rotate(271.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.619px, -11.6418px) rotate(273.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-177.143px, -17.4471px) rotate(275.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-176.477px, -23.2337px) rotate(277.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-175.623px, -28.9954px) rotate(279.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-174.58px, -34.7261px) rotate(281.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-173.35px, -40.4196px) rotate(283.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-171.935px, -46.0698px) rotate(285deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-170.335px, -51.6707px) rotate(286.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-168.554px, -57.2162px) rotate(288.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-166.591px, -62.7005px) rotate(290.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-164.451px, -68.1177px) rotate(292.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-162.134px, -73.4619px) rotate(294.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-159.643px, -78.7274px) rotate(296.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-156.982px, -83.9086px) rotate(298.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-154.153px, -89px) rotate(300deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-151.158px, -93.9961px) rotate(301.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-148.002px, -98.8915px) rotate(303.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-144.687px, -103.681px) rotate(305.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-141.217px, -108.36px) rotate(307.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-137.596px, -112.922px) rotate(309.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-133.827px, -117.364px) rotate(311.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-129.916px, -121.679px) rotate(313.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-125.865px, -125.865px) rotate(315deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-121.679px, -129.916px) rotate(316.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-117.364px, -133.827px) rotate(318.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-112.922px, -137.596px) rotate(320.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-108.36px, -141.217px) rotate(322.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-103.681px, -144.687px) rotate(324.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-98.8915px, -148.002px) rotate(326.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-93.9961px, -151.158px) rotate(328.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-89px, -154.153px) rotate(330deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-83.9086px, -156.982px) rotate(331.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-78.7274px, -159.643px) rotate(333.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-73.4619px, -162.134px) rotate(335.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-68.1177px, -164.451px) rotate(337.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-62.7005px, -166.591px) rotate(339.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-57.2162px, -168.554px) rotate(341.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-51.6707px, -170.335px) rotate(343.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-46.0698px, -171.935px) rotate(345deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-40.4196px, -173.35px) rotate(346.875deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-34.7261px, -174.58px) rotate(348.75deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-28.9954px, -175.623px) rotate(350.625deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-23.2337px, -176.477px) rotate(352.5deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-17.4471px, -177.143px) rotate(354.375deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-11.6418px, -177.619px) rotate(356.25deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-5.824px, -177.905px) rotate(358.125deg) scale(1, 1); opacity: 0.5; color: rgb(255, 75, 75);"></div><div class="tick" data-index="0" style="transform: translate(-4.35974e-14px, -178px) rotate(360deg) scaleY(1); opacity: 0; color: rgb(255, 75, 75);"></div></div></div></div></div></div><div id="labels-renderer" style="overflow: hidden; width: 1264px; height: 648px; position: absolute; top: 0px; left: 0px;"><svg id="path-animation" viewBox="0 0 1264 648"><polyline points="1147.666748046875 73.75 1045.2675301778631 73.75 686.5604750354133 432.4570551424499" class="color-waapi" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="1122.4583740234375 94.75 753.1859374347921 94.75 454.2150210198298 393.72091641496235" class="color-timeline" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="1130.8646240234375 115.75 818.1735865865355 115.75 562.3168734128964 371.6067131736392" class="color-utils" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="1164.4583740234375 136.75 895.1972811274493 136.75 670.8973879079424 361.0498932195068" class="color-svg" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="1139.260498046875 157.75 659.6851772237703 157.75 468.64429975264915 348.7908774711211" class="color-easings" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="1114.0625 178.75 711.5548179228458 178.75 573.5465837779607 316.75823414488514" class="color-animation" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="117 490.0833435058594 542.5958886324249 490.0833435058594 694.6478257928081 338.0314063454761" class="color-timer" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="133.80208587646484 511.0833435058594 498.12824770485565 511.0833435058594 691.1426968888177 318.06889432189735" class="color-easings" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="150.6041717529297 532.0833740234375 543.0463859905558 532.0833740234375 776.1210699552951 299.0086900586983" class="color-draggable" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="125.40625 553.0833740234375 334.2177998019476 553.0833740234375 596.7808985546628 290.52027527072227" class="color-events" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline><polyline points="117 574.0833740234375 368.83971715389214 574.0833740234375 679.2492553225385 263.67383585479115" class="color-scope" style="stroke: var(--hex-fg-4); fill: none; stroke-width: 1px;" pathLength="1000" stroke-dashoffset="0" stroke-dasharray="0 1010" draw="0 0"></polyline></svg><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(862.309px, 495.616px); z-index: 19;"></div><div class="module-label-text module-waapi color-waapi" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(903.42px, 435.579px); z-index: 21;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">3.50</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(339.84px, 406.534px); z-index: 11;"></div><div class="module-label-text module-timeline color-timeline" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(365.858px, 382.972px); z-index: 20;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">0.55</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(536.979px, 384.027px); z-index: 15;"></div><div class="module-label-text module-stagger color-utils" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(632px, 297.544px); z-index: 22;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">0.48</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(815.189px, 391.054px); z-index: 14;"></div><div class="module-label-text module-svg color-svg" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(880.978px, 311.229px); z-index: 17;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">0.35</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(346.896px, 335.95px); z-index: 9;"></div><div class="module-label-text module-spring color-easings" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(385.042px, 294.803px); z-index: 16;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">0.52</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(546.022px, 293.602px); z-index: 8;"></div><div class="module-label-text module-animation color-animation" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(632px, 207.677px); z-index: 13;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">5.20</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(721.652px, 330.339px); z-index: 10;"></div><div class="module-label-text module-timer color-timer" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(632px, 243.973px); z-index: 18;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">5.60</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(717.978px, 293.602px); z-index: 7;"></div><div class="module-label-text module-easings color-easings" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(632px, 207.677px); z-index: 12;">easings</div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(893.414px, 244.368px); z-index: 2;"></div><div class="module-label-text module-draggable color-draggable" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(852.163px, 194.042px); z-index: 6;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">6.41</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(491.993px, 248.192px); z-index: 4;"></div><div class="module-label-text module-scroll color-events" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(417.512px, 168.165px); z-index: 5;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">4.30</span> KB</div></div><div class="module-label-point" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(706.275px, 176.564px); z-index: 1;"></div><div class="module-label-text module-scope color-scope" draggable="false" style="position: absolute; user-select: none; transform: translate(-50%, -50%) translate(632px, 93.9474px); z-index: 3;"><div style="opacity: 0; transform: scale(0);"><span class="label-dot"></span><span class="size">0.22</span> KB</div></div></div></div>
+  </div>
+<script src="assets/js/home.js" type="module"></script>
+
+</body></html>
